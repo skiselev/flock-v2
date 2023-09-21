@@ -1,0 +1,19 @@
+GAL16V8    ;  Works with GAL16V8B and ATF16V8B
+FLOCK_V2   ;  Flock Version 2
+
+A1	A2	A3	A4	A5	A6	A7	M1	IORQ	GND
+RD	WR	FDCCS	DACK	CCRWR	DORWR	RTCRD	RTCWR	RTCADDR	VCC
+
+/CCRWR = /IORQ * M1 * /A7 * A6 * /A5 * /A4 * A3 * /A2 * /A1
+/FDCCS = /IORQ * M1 * /A7 * A6 * /A5 * A4 * /A3 * /A2 * /A1
+/DORWR = /IORQ * M1 * /A7 * A6 * /A5 * A4 * A3 * /A2 * /A1
+/RTCWR = /WR * /IORQ * M1 * A7 * A6 * /A5 * /A4 * /A3 * /A2 * /A1 * /RTCADDR +
+         /WR * /IORQ * M1 * /A7 * /A6 * /A5 * /A4 * A3 * A2 * /A1 * RTCADDR
+/RTCRD = /RD * /IORQ * M1 * A7 * A6 * /A5 * /A4 * /A3 * /A2 * /A1 * /RTCADDR +
+         /RD * /IORQ * M1 * /A7 * /A6 * /A5 * /A4 * A3 * A2 * /A1 * RTCADDR
+/DACK = /RD * /IORQ * M1 * /A7 * A6 * /A5 * A4 * A3 * /A2 * /A1
+
+DESCRIPTION
+
+Address decode and control signals generation logic for Flock V2
+Floppy Disk Controller (FDC) and Real Time Clock (RTC) module
