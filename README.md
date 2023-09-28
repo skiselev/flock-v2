@@ -20,7 +20,7 @@ Floppy Disk Controller and Real Time Clock for RCBUS systems
 ## Overview
 Flock is an RCBUS floppy disk controller (FDC) and real time clock (RTC) module. It designed to work with RomWBW firmware, supporting CP/M, ZSDOS, and various applications under these OSes.
 
-![Flock Assembled Board](images/Flock-Assembled_Board-800px.jpg)
+![Flock V2 Board Preview](images/Flock-V2-3D_Rendering.png)
 
 ### Specifications
 * Floppy Disk Controller: Western Digital* WD37C65 or compatible

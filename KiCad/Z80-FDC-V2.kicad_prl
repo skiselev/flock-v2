@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 37,
+    "active_layer": 0,
     "active_layer_preset": "",
     "auto_track_width": false,
     "hidden_nets": [],
@@ -68,7 +68,7 @@
     "zone_display_mode": 0
   },
   "meta": {
-    "filename": "Z80-FDC.kicad_prl",
+    "filename": "Z80-FDC-V2.kicad_prl",
     "version": 3
   },
   "project": {
