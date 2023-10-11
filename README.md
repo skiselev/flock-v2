@@ -110,7 +110,7 @@ Pin | Signal Name | Description
 2   | GND         | Negative terminal - ground
 
 
-#### J3 - RCBus Bus
+#### J3 - RCBus
 Pin   | Signal Name | Description                             | Pin   | Signal Name | Description
 ----- | ----------- | --------------------------------------- | ----- | ----------- | -----------
 J3-1  | A15         | Address A15; Input; Not connected       | J3-41 | p41         | Reserved; Not connected
