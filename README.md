@@ -1,5 +1,5 @@
 # Flock - Version 2.0
-Floppy Disk Controller and Real Time Clock for RCBUS systems
+Floppy Disk Controller and Real Time Clock for RCBus systems
 
 ## Table of Content
 * [Overview](#overview)
@@ -18,7 +18,7 @@ Floppy Disk Controller and Real Time Clock for RCBUS systems
   * [Trademarks](#trademarks)
 
 ## Overview
-Flock is an RCBUS floppy disk controller (FDC) and real time clock (RTC) module. It designed to work with RomWBW firmware, supporting CP/M, ZSDOS, and various applications under these OSes.
+Flock is an RCBus floppy disk controller (FDC) and real time clock (RTC) module. It designed to work with RomWBW firmware, supporting CP/M, ZSDOS, and various applications under these OSes.
 
 ![Flock V2 Board Preview](images/Flock-V2-3D_Rendering.png)
 
@@ -33,7 +33,7 @@ Flock is an RCBUS floppy disk controller (FDC) and real time clock (RTC) module.
   * 5.25", 360 KB diskettes in 1.2 MB drive (not supported by RomWBW, requires Y3, C10, and C11 to be installed)
 * Supports two floppy drives, using IBM PC-like cable with twisted Disk Select / Motor Enable wires between two drives
 * Real Time Clock: Maxim Integrated DS1302
-* Bus: RCBUS, RC2014* compatible
+* Bus: RCBus, RC2014* compatible
 
 ## Assembly Instructions
 
@@ -110,7 +110,7 @@ Pin | Signal Name | Description
 2   | GND         | Negative terminal - ground
 
 
-#### J3 - RCBUS Bus
+#### J3 - RCBus Bus
 Pin   | Signal Name | Description                             | Pin   | Signal Name | Description
 ----- | ----------- | --------------------------------------- | ----- | ----------- | -----------
 J3-1  | A15         | Address A15; Input; Not connected       | J3-41 | p41         | Reserved; Not connected
@@ -158,7 +158,7 @@ J3-40 | USER4       | User Pin 4; Not connected               | J3-80 | USER8   
 
 #### Version 2.0
 
-[Flock project on Mouser.com](https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=xxxxxxxxxx) - View and order all components except of the FDC and the PCB.
+[Flock V2 project on Mouser.com]([https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=xxxxxxxxxx](https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=57797d9ea4)) - View and order all components except of the FDC and the PCB.
 
 [Flock project on OSH Park](https://oshpark.com/shared_projects/xxxxxxxx) - View and order the PCB.
 
@@ -170,27 +170,28 @@ PCB                |           | Flock PCB - Version 2.0                     | 1
 Integrated Circuit | U1        | WD37C65BJM - FDC, CMOS, 44 pin PLCC         | 1        | eBay. Alternative: ST AIC37C65CL
 Integrated Circuit | U2        | DS1302+ - RTC, 8 pin DIP                    | 1        | Mouser [700-DS1302](https://www.mouser.com/ProductDetail/700-DS1302)
 Integrated Circuit | U3        | ATF16V8B-15PU - Simple Programmable Logic Device, 20 pin DIP | 1 | Mouser [556-AF16V8B15PU](https://www.mouser.com/ProductDetail/556-AF16V8B15PU)
-Integrated Circuit | U4        | 74HCT174 - Hex D-type flip-flop with reset, 16 pin DIP | 1 | Mouser [595-CD74HCT174E](https://www.mouser.com/ProductDetail/595-CD74HCT174E)
+Integrated Circuit | U4        | 74AHCT174 - Hex D-type flip-flop with reset, 16 pin DIP | 1 | Mouser [595-SN74AHCT174N](https://www.mouser.com/ProductDetail/595-SN74AHCT174N)
 Integrated Circuit | U5        | 74HCT125 - Quadruple bus buffer gates with 3-state outputs, 14 pin DIP | 1 | Mouser [595-SN74HCT125NE4](https://www.mouser.com/ProductDetail/595-SN74HCT125NE4)
 Quartz Crystal     | Y1        | 16 MHz, series                              | 1        | Mouser [774-ATS160-E](https://www.mouser.com/ProductDetail/774-ATS160-E)
 Quartz Crystal     | Y2        | 32768 Hz, 6 pF                              | 1        | Mouser [815-AB26T32768KHZ6B](https://www.mouser.com/ProductDetail/815-AB26T32768KHZ6B)
-Quartz Crystal     | Y3        | 9.6 MHz, series                             | 1        | Optional
-Connector          | J1        | 2x17 pin header, shrouded, 2.54 mm pitch, right angle    | 1        | Mouser [517-30334-5002](https://www.mouser.com/ProductDetail/517-30334-5002)
+Quartz Crystal     | Y3        | 9.6 MHz, series                             | 1        | Optional; Install for 300 Kbps transfer rate support
+Connector          | J1        | 2x17 pin header, shrouded, 2.54 mm pitch, right angle | 1 | Mouser [517-30334-5002](https://www.mouser.com/ProductDetail/517-30334-5002)
 Connector          | J2        | 2 pin header with friction lock, right angle | 1       | Mouser [571-2-644488-2](https://www.mouser.com/ProductDetail/571-2-644488-2)
-Pin Header         | J3, J4    | 2x40 pin header, 2.54 mm pitch, right angle | 1        | Mouser [517-5121TG](https://www.mouser.com/ProductDetail/517-5121TG)
-Pin Header         | JP1       | 2 pin header, 2.54 mm pitch                 | 1        | Mouser
+Pin Header         | J3        | 2x40 pin header, 2.54 mm pitch, right angle | 1        | Mouser [517-5121TG](https://www.mouser.com/ProductDetail/517-5121TG)
+Pin Header         | JP1       | 2 pin header, 2.54 mm pitch                 | 1        | Mouser [649-68002-102HLF](https://www.mouser.com/ProductDetail/649-68002-102HLF)
+Jumper             | JP1       | Shunt, 2 pin 2.54 mm pitch                  | 1        | Mouser [806-SX1100-B](https://www.mouser.com/ProductDetail/806-SX1100-B)
 Battery Holder     | BT1       | CR2032 battery holder                       | 1        | Mouser [122-2620-GR](https://www.mouser.com/ProductDetail/122-2620-GR) or [122-2420-GR](https://www.mouser.com/ProductDetail/122-2420-GR). Install either BT1 or C7
 Battery            | BT1       | CR2023 battery                              | 1        | Mouser [81-CR2032](https://www.mouser.com/ProductDetail/81-CR2032), [658-CR2032](https://www.mouser.com/ProductDetail/658-CR2032), or [614-CR2032-200](https://www.mouser.com/ProductDetail/614-CR2032-200). Install either BT1 or C7
 Capacitor          | C1 - C5   | 0.1 uF, 50V, MLCC, 5 mm pitch               | 5        | Mouser [810-FG28X7R1H104KNT6](https://www.mouser.com/ProductDetail/810-FG28X7R1H104KNT6)
-Capacitor          | C6        | 47 uF, 16V, Organic Polymer, 6.3 mm diameter, 2.5 mm pitch | 1 | Mouser
+Capacitor          | C6        | 10 uF, 47V, Organic Polymer, 6.3 mm diameter, 2.5 mm pitch | 1 | Mouser [80-A759EA106M1JAAE60](https://www.mouser.com/ProductDetail/80-A759EA106M1JAAE60). Note: PCB silkscreen specifies 47uF capacitor. 10uF - 47uF capacitor with voltage rating 10V or more can be used
 Capacitor          | C7        | 0.22 F, 5.5V, Supercapacitor, 13.5 mm diameter, 5 mm pitch | 1 | Mouser [555-DBN-5R5D334T](https://www.mouser.com/ProductDetail/555-DBN-5R5D334T). Install either BT1 or C7
 Capacitor          | C8        | 47 pF, 50V, MLCC, 5 mm pitch                | 1        | Mouser [810-FG28C0G2A470JNT0](https://www.mouser.com/ProductDetail/810-FG28C0G2A470JNT0)
 Capacitor          | C9        | 15 pF, 50V, MLCC, 5 mm pitch                | 1        | Mouser [810-FG28C0G2A150JNT0](https://www.mouser.com/ProductDetail/810-FG28C0G2A150JNT0)
-Capacitor          | C10       | 68 pF, 50V, MLCC, 5 mm pitch                | 1        | Optional, Mouser
-Capacitor          | C11       | 56 pF, 50V, MLCC, 5 mm pitch                | 1        | Optional, Mouser
+Capacitor          | C10       | 68 pF, 50V, MLCC, 5 mm pitch                | 1        | Optional; Install for 300 Kbps transfer rate support
+Capacitor          | C11       | 56 pF, 50V, MLCC, 5 mm pitch                | 1        | Optional; Install for 300 Kbps transfer rate support
 Resistor Array     | RN1       | 1 kohm, bussed, 6 pin SIP                   | 1        | Mouser [652-4606X-1LF-1K](https://www.mouser.com/ProductDetail/652-4606X-1LF-1K)
-Resistor           | R1 - R3   | 10 kohm, 0.25 W, 1% tolerance, axial        | 3        | Mouser [603-MFR-25FRF52-4K7](https://www.mouser.com/ProductDetail/603-MFR-25FRF52-4K7)
-IC Socket          | U1        | 44 pin PLCC, through hole                   | 1        | Mouser [517-8444-11B1-RK-TP](https://www.mouser.com/ProductDetail/517-8444-11B1-RK-TP)
+Resistor           | R1 - R3   | 10 kohm, 0.25 W, 1% tolerance, axial        | 3        | Mouser [603-MFR-25FRF5210K](https://www.mouser.com/ProductDetail/603-MFR-25FRF5210K)
+IC Socket          | U1        | 44 pin PLCC, through hole                   | 1        | Mouser [649-54020-44030LF](https://www.mouser.com/ProductDetail/649-54020-44030LF), [517-8444-11B1-RK-TP](https://www.mouser.com/ProductDetail/517-8444-11B1-RK-TP)
 IC Socket          | U2        | 8 pin DIP                                   | 1        | Mouser [649-DILB8P223TLF](https://www.mouser.com/ProductDetail/649-DILB8P223TLF)
 IC Socket          | U3        | 20 pin DIP                                  | 1        | Mouser [649-DILB20P-223TLF](https://www.mouser.com/ProductDetail/649-DILB20P-223TLF)
 IC Socket          | U4        | 16 pin DIP                                  | 1        | Mouser [649-DILB16P-223TLF](https://www.mouser.com/ProductDetail/649-DILB16P-223TLF)
@@ -204,7 +205,14 @@ Connector          | J2        | Floppy disk power connector contacts        | 2
 ### Changes
 
 * Version 2.0
-  * 
+  * Update form factor from RC2014* compatible to to RCBus
+  * Add an option to use CR2032 battery instead of a super capacitor for the RTC
+  * Use right angle connector for the floppy interface
+  * Use ATF16V8B SPLD for address decode
+  * Add JP1 jumper for selecting RTC I/O address. Either 0xC0 or 0x0C can be used
+  * Add JP2 jumper for disabling the RTC.
+  * Add an option to support 300 Kbps transfer speed
+  * Add a header for GPIO signals
 * Version 1.0
   * Initial version
 
