@@ -74,7 +74,43 @@ Read: Toggle floppy disk controller transfer complete (TC) line
 Read/Write: Access real time clock (RTC)
 The RTC address is configured using JP1 jumper
 
-### Connectors
+### Jumpers and Connectors
+
+#### JP1 - RTC I/O address select
+
+Position       | Description
+-------------- | -----------------
+open (default) | RTC address: 0xC0
+closed         | RTC address: 0x0C
+
+* Use 0xC0 address for Z80-based systems and 0x0C address for Z180-based systems
+
+#### JP2 - Enable RTC
+
+Position       | Description
+-------------- | -----------------
+1-2 (default)  | RTC enabled
+2-3            | RTC disabled
+
+* JP2 is a solder jumper, located on the back of the board
+* By default positions 1-2 are connected with a PCB trace
+* If the system already has an RTC or the RTC functionality is not needed:
+  * Cut the PCB trace between positions 1-2
+  * Connect positions 2-3 with a solder bridge
+
+#### JP3 - Enable 300 Kbps transfer rate support
+
+Position       | Description
+-------------- | -----------------
+1-2 (default)  | 300 Kbps disabled
+2-3            | 300 Kbps enabled
+
+* JP3 is a solder jumper, located on the back of the board
+* By default positions 1-2 are connected with a PCB trace
+* If 300 Kbps is desired:
+  * Cut the PCB trace between positions 1-2
+  * Connect positions 2-3 with a solder bridge
+  * Install Y3, C10, and C11
 
 #### J1 - Floppy
 Connect to floppy drive interface connector.

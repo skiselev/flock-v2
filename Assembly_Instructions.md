@@ -28,11 +28,10 @@ Image                                                                           
 <img src="images/Component-IC-74HCT125-8BUF.jpg" alt="3-State Buffer - 74HCT125" height="120">  | U5        | 74HCT125 - Quadruple bus buffer gates with 3-state outputs, 14 pin DIP | 1 
 <img src="images/Component-Crystal-16MHz.jpg" alt="16 MHz Quartz Crystal" height="120">         | Y1        | Quarts crystal, 16 MHz, series                         | 1
 <img src="images/Component-Crystal-32762Hz.jpg" alt="32762 Hz Quartz Crystal" height="120">     | Y2        | Quarts crystal, 32768 Hz, 6 pF                         | 1
-<img src="images/Component-Header-2x17-Shrouded.jpg" alt="2x17 Shrouded Pin Header Right Angle" height="120"> | J1      | Pin header, shrouded, 2x17 pins, right angle, 2.54 mm pitch | 1
+<img src="images/Component-Header-2x17-Shrouded-RA.jpg" alt="2x17 Shrouded Pin Header Right Angle" height="120"> | J1      | Pin header, shrouded, 2x17 pins, right angle, 2.54 mm pitch | 1
 <img src="images/Component-Conn-Latch-2-RA.jpg" alt="Friction Lock Connector" height="120">     | J2        | Pin header with friction lock, 2 pins, right angle     | 1 (optional)
-<img src="images/Component-Header-1x16-RA.jpg" alt="Pin Header 1x16 Right Angle" height="120">  | J3        | Pin header, 1x16 pins, 2.54 mm pitch, right angle      | 2
-<img src="images/Component-Header-2x10-RA.jpg" alt="Pin Header 2x10 Right Angle" height="120">  | J3, J4    | Pin header, 2x10 pins, 2.54 mm pitch, right angle      | 1
-Pin header, 2 pins                                                                              | JP1       | Pin header, 2 pins, 2.54 mm pitch                      | 1
+<img src="images/Component-Header-2x40-RA.jpg" alt="Pin Header 2x40 Right Angle" height="120">  | J3        | Pin header, 2x40 pins, 2.54 mm pitch, right angle      | 1
+<img src="images/Component-Header-2.jpg" alt="Pin Header 2 pins" height="120">                  | JP1       | Pin header, 2 pins, 2.54 mm pitch                      | 1
 <img src="images/Component-Jumper-2.jpg" alt="Jumper" height="120">                             | JP1       | Jumper/Shunt, 2 pin 2.54 mm pitch
 <img src="images/Component-Battery_Holder-CR2032.jpg" alt="CR2032 Battery Holder" height="120"> | BT1       | Battery Holder, CR2032                                 | 1
 <img src="images/Component-Cap-0.1uF-MLCC.jpg" alt="Ceramic Capacitors - 0.1uF" height="120">   | C1 - C5   | Capacitor, MLCC, 0.1 uF, 50V, 5 mm pitch               | 5
@@ -41,10 +40,10 @@ Pin header, 2 pins                                                              
 <img src="images/Component-Cap-47pF-MLCC.jpg" alt="Ceramic Capacitor - 47pF" height="120">      | C8        | Capacitor, MLCC, 47 pF, 50V, 5 mm pitch                | 1
 <img src="images/Component-Cap-15pF-MLCC.jpg" alt="Ceramic Capacitor - 15pF" height="120">      | C9        | Capacitor, MLCC, 15 pF, 50V, 5 mm pitch                | 1
 <img src="images/Component-RN5-1k.jpg.jpg" alt="Resistor Network - 5x1k" height="120">          | RN1       | Resistor Network, 1 kohm, bussed, 6 pin SIP            | 1
-<img src="images/Component-Res-4.7k.jpg" alt="Resistors - 10k" height="120">                    | R1 - R3    | Resistor, 10 kohm, 0.25 W, 1% tolerance, axial        | 2
+<img src="images/Component-Res-10k.jpg" alt="Resistors - 10k" height="120">                    | R1 - R3    | Resistor, 10 kohm, 0.25 W, axial                       | 2
 <img src="images/Component-Socket-PLCC44.jpg" alt="IC Socket - PLCC44" height="120">            | U1        | Integrated circuit socket, 44 pin PLCC, through hole   | 1
 <img src="images/Component-Socket-DIP8.jpg" alt="IC Socket - DIP8" height="120">                | U2        | Integrated circuit socket, 8 pin DIP                   | 1 (optional)
-<img src="images/Component-Socket-DIP16.jpg" alt="IC Socket - DIP20" height="120">              | U3        | Integrated circuit socket, 20 pin DIP                  | 1 (optional)
+<img src="images/Component-Socket-DIP20.jpg" alt="IC Socket - DIP20" height="120">              | U3        | Integrated circuit socket, 20 pin DIP                  | 1 (optional)
 <img src="images/Component-Socket-DIP16.jpg" alt="IC Socket - DIP16" height="120">              | U4        | Integrated circuit socket, 16 pin DIP                  | 1 (optional)
 <img src="images/Component-Socket-DIP14.jpg" alt="IC Socket - DIP16" height="120">              | U5        | Integrated circuit socket, 14 pin DIP                  | 1 (optional)
 <img src="images/Floppy_Power_Cable.jpg" alt="Floppy power cable" height="120">                 |           | Floppy disk power cable                                | 1 (optional)
