@@ -20,7 +20,7 @@ The table below shows the images of the components included in the kit. The up t
 
 Image                                                                                           | Reference | Description                                            | Quantity
 ----------------------------------------------------------------------------------------------- | --------- | ------------------------------------------------------ | --------
-<img src="images/Flock-PCB-Front_Side-800px.jpg" alt="PCB - Flock V2" height="120">             | PCB       | Flock PCB - Version 2.0                                | 1
+<img src="images/Flock-V2-PCB-Front_Side-800px.jpg" alt="PCB - Flock V2" height="120">             | PCB       | Flock PCB - Version 2.0                                | 1
 <img src="images/Component-IC-37C65-FDC.jpg" alt="FDC - 37C65" height="120">                    | U1        | WD37C65BJM - FDC, CMOS, 44 pin PLCC                    | 1
 <img src="images/Component-IC-DS1302-RTC.jpg" alt="RTC - DS1302+" height="120">                 | U2        | DS1302+ - RTC, 8 pin DIP                               | 1
 <img src="images/Component-IC-SPLD-Flock-V2.jpg" alt="Flock V2 SPLD - ATF16V8B" height="120">   | U3        | ATF16V8B SPLD, programmed with Flock V2 fuse map, 20 pin DIP | 1
