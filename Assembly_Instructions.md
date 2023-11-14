@@ -33,9 +33,9 @@ Image                                                                           
 <img src="images/Component-Header-2x40-RA.jpg" alt="Pin Header 2x40 Right Angle" height="120">  | J3        | Pin header, 2x40 pins, 2.54 mm pitch, right angle      | 1
 <img src="images/Component-Header-2.jpg" alt="Pin Header 2 pins" height="120">                  | JP1       | Pin header, 2 pins, 2.54 mm pitch                      | 1
 <img src="images/Component-Jumper-2.jpg" alt="Jumper" height="120">                             | JP1       | Jumper/Shunt, 2 pin 2.54 mm pitch
-<img src="images/Component-Battery_Holder-CR2032.jpg" alt="CR2032 Battery Holder" height="120"> | BT1       | Battery Holder, CR2032                                 | 1
+<img src="images/Component-Battery_Holder-CR2032.jpg" alt="CR2032 Battery Holder" height="120"> | BT1       | Battery Holder, CR2032 (optional; C7 can be installed instead) | 1
 <img src="images/Component-Cap-0.1uF-MLCC.jpg" alt="Ceramic Capacitors - 0.1uF" height="120">   | C1 - C5   | Capacitor, MLCC, 0.1 uF, 50V, 5 mm pitch               | 5
-<img src="images/Component-Cap-10uF-Polymer.jpg" alt="Organic Polymer Capacitor - 10uF" height="120"> | C6  | Capacitor, Organic Polymer, 10 uF, 63V, 6.3 mm diameter, 2.5 mm pitch | 1
+<img src="images/Component-Cap-10uF-Polymer.jpg" alt="Organic Polymer Capacitor - 10uF" height="120"> | C6  | Capacitor, Organic Polymer, 10 uF, 63V, 6.3 mm diameter, 2.5 mm pitch (optional; BT1 can be installed instead) | 1
 <img src="images/Component-Supercap-0.33F.jpg" alt="Supercapacitor - 0.33F" height="120">       | C7        | Supercapacitor, 0.22 F, 5.5V, 13.5 mm diameter, 5 mm pitch            | 1
 <img src="images/Component-Cap-47pF-MLCC.jpg" alt="Ceramic Capacitor - 47pF" height="120">      | C8        | Capacitor, MLCC, 47 pF, 50V, 5 mm pitch                | 1
 <img src="images/Component-Cap-15pF-MLCC.jpg" alt="Ceramic Capacitor - 15pF" height="120">      | C9        | Capacitor, MLCC, 15 pF, 50V, 5 mm pitch                | 1
@@ -74,12 +74,10 @@ as the socket introduces extra capacitance. You may choose to solder the DS1302 
 * Solder the J3 RCBus connector.
 * Solder the J2 floppy power connector. This connector is optional. You might choose to power the floppy drive(s) directly from the power supply instead
 * Solder the J1 floppy interface connector.
-and the polarization key notch in the connector should be located by the top edge of the PCB. Note: the kit includes a straight connector.
-You might choose to replace it with a right angle pin header (not supplied) to simplify the floppy interface cable routing
-and reduce intereference with the next module in the backplane. Note that you may need to remove/extract pin 3 from this connector to accommodate some floppy cables which have this pin position blocked.
-* Solder the C6 capacitor, and, if the supercapacitor is used for RTC backup, the C7 capacitor. Pay attention to the __polarity__ – the negative side is painted white on the PCB and marked with blue (C6)
-or gray with minus signs (C7) markings. Note that C6 is marked as 47uF on the PCB, and C7 is marked as 0.22F.
-Install the supplied 10uF and 0.33F capacitors respectively instead
+  * Note that you may need to cut or extract pin 3 from this connector to accommodate some floppy cables that have this pin position blocked.
+* Solder the C6 capacitor. Pay attention to the __polarity__ – the negative side is painted white on the PCB and marked with blue. Note that C6 is marked as 47uF on the PCB. Install the supplied 10uF capacitor instead.
+* If a supercapacitor to be used for RTC backup, solder the C7 supercapacitor. Pay attention to the __polarity__ – the negative side is painted white on the PCB and marked with gray stripe. Note that C7 is marked as 0.22F on the PCB. Install the supplied 0.33F supercapacitor instead.
+* If a CR2032 battery to be used for RTC backup, solder BT1 battery holder. Observe the __polarity__.
 
 ### 3. Check your soldering work
 
