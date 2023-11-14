@@ -68,16 +68,18 @@ Solder the components to the PCB going from lower profile components to higher p
   * C9 has “150” marking
 * Solder DIP sockets for the U2 – U5 ICs. Double check the orientation of the sockets. The notch on the socket should match the notch on the PCB’s silkscreen.
 Solder two opposite pins first, making sure that the socket sits flat on the PCB. Check the orientation and the alignment, fix as needed,
-then solder the rest of the pins. Note that soldering the socket for U2 is optional. The real time clock would be more accurate without it,
-as the socket introduces extra capacitance. You may choose to solder the DS1302 directly to the PCB at this step
+then solder the rest of the pins
+  * Note that soldering the socket for U2 is optional. The real time clock would be more accurate without it,
+as the socket introduces extra capacitance. You may choose to solder the DS1302 RTC IC directly to the PCB at this step
 * Solder the PLCC socket for the U1 IC. Make sure that the cut side of the socket aligns with the drawing on the silkscreen
-* Solder the J3 RCBus connector.
+* Solder the J3 RCBus connector
 * Solder the J2 floppy power connector. This connector is optional. You might choose to power the floppy drive(s) directly from the power supply instead
-* Solder the J1 floppy interface connector.
-  * Note that you may need to cut or extract pin 3 from this connector to accommodate some floppy cables that have this pin position blocked.
-* Solder the C6 capacitor. Pay attention to the __polarity__ – the negative side is painted white on the PCB and marked with blue. Note that C6 is marked as 47uF on the PCB. Install the supplied 10uF capacitor instead.
-* If a supercapacitor to be used for RTC backup, solder the C7 supercapacitor. Pay attention to the __polarity__ – the negative side is painted white on the PCB and marked with gray stripe. Note that C7 is marked as 0.22F on the PCB. Install the supplied 0.33F supercapacitor instead.
-* If a CR2032 battery to be used for RTC backup, solder BT1 battery holder. Observe the __polarity__.
+* Solder the J1 floppy interface connector
+  * Note that you may need to cut or extract pin 3 from this connector to accommodate some floppy cables that have this pin position blocked
+* Solder the JP1 header
+* Solder the C6 capacitor. Pay attention to the __polarity__ – the negative side is painted white on the PCB and marked with blue. Note that C6 is marked as 47uF on the PCB. Install the supplied 10uF capacitor instead
+* If a supercapacitor to be used for RTC backup, solder the C7 supercapacitor. Pay attention to the __polarity__ – the negative side is painted white on the PCB and marked with gray stripe. Note that C7 is marked as 0.22F on the PCB. Install the supplied 0.33F supercapacitor instead
+* If a CR2032 battery to be used for RTC backup, solder BT1 battery holder. Observe the __polarity__
 
 ### 3. Check your soldering work
 
@@ -94,7 +96,13 @@ as the socket introduces extra capacitance. You may choose to solder the DS1302 
 
 ## Module Installation Instructions
 
-* Make sure that your RC2014*-compatible system has I/O port ranges 0x48-0x5F and 0xC0-0xC8 available for the Flock module use. If needed re-configure existing modules, and move them to other I/O addresses
+* Make sure that your RCBus or RC2014*-compatible system has I/O port range 0x48-0x5F available for the Floppy Disk Controller
+* If you have a Z80-based system:
+  * Make sure that jumper JP1 is **not** installed
+  * Verify that I/O port range 0xC0-0xC1 is available
+* If you have a Z180-base system:
+  * Install jumper JP1
+  * Verify that I/O port range 0x0C-0x0D is available
 * Plug the module into your system
 * Connect the floppy drive(s) to the board. Standard IBM PC ribbon floppy cable with twisted wires 10-16 should be used (not supplied). The first floppy drive is the one at the end of the cable, the second is on the middle of the cable
 * Connect the floppy drive(s) to power supply. A single 3.5” 1.44 MB drive can be powered directly from the Flock board, using supplied power cable. Make sure to use powerful enough power supply. The floppy drive consumes about 1A
@@ -110,30 +118,27 @@ as the socket introduces extra capacitance. You may choose to solder the DS1302 
 
 ## Module Usage Instructions – Floppy Disk Controller
 The FDU utility included in RomWBW and can be used to test the floppy disk controller and to format floppy disks
-*	Boot your system to CP/M or ZSDOS and run the **FDU** command. Type **H** to select “(H) RC2014 WDC (SMB)”
-*	Use the **S** command to set the floppy disk configuration. Select the correct media type (e.g., enter “01” for 1.44 MB disks), leave the default settings for mode and trace
-*	Use the **F** command to format the floppy disk. Note that all information on the disk will be destroyed
-*	Use the **R** and **W** commands to test reading from and writing to the floppy disk
+* Boot your system to CP/M or ZSDOS and run the **FDU** command. Type **H** to select “(H) RC2014 WDC (SMB)”
+* Use the **S** command to set the floppy disk configuration. Select the correct media type (e.g., enter “01” for 1.44 MB disks), leave the default settings for mode and trace
+* Use the **F** command to format the floppy disk. Note that all information on the disk will be destroyed
+* Use the **R** and **W** commands to test reading from and writing to the floppy disk
 Once formatted, the floppy disk can be accessed from CP/M and ZSDOS. RomWBW normally assigns letters _C:_ and _D:_ to the first and the second floppy drives respectively
 
 ## Module Usage Instructions – FAT12 Floppy formatting
 The FAT utility included with RomWBW will format floppies to FAT12, rendering them writable on modern computers.
-*	Boot your system to an OS which supports the FAT utility (I.E. ZP/M). 
-*	Observe the disk unit number when booting your system for FD0 (I.E. Disk 2)
-*	Run **FAT FORMAT 2:** and be absolutely sure your disk unit number is correct.  
-*	Wait for the format to complete.
+* Boot your system to an OS which supports the FAT utility (I.E. ZP/M). 
+* Observe the disk unit number when booting your system for FD0 (I.E. Disk 2)
+* Run **FAT FORMAT 2:** and be absolutely sure your disk unit number is correct.  
+* Wait for the format to complete.
 Once formatted, the disk can be used with a modern computer, such as with a USB to 1.44 Floppy drive. The floppy disk can be accessed only using the FAT utility on RomWBW; Formatting a disk this way is primarily to use it for a bridge to a modern machine. The FAT utility is used to copy files between your CP/M etc. system storage, and the FAT formatted floppy disk.
 
 ## Module Usage Instructions – Real Time Clock
 The RTC utility included in RomWBW is used to set and test the real time clock
-*	Boot your system to CP/M or ZSDOS and run the **RTC** command
-*	Use the **I** command to enter the current date and time. Use two digit values for each entry
-*	Use the **S** command to set the RTC to the time entered in the previous step with I command
-*	Use the **T** command to print the current time. Check that the time is set correctly and RTC properly updates the time
-*	Use the **C** command to enable trickle charge, so that DS1302 will be charing the on-board supercapacitor
+* Boot your system to CP/M or ZSDOS and run the **RTC** command
+* Use the **I** command to enter the current date and time. Use two digit values for each entry
+* Use the **S** command to set the RTC to the time entered in the previous step with I command
+* Use the **T** command to print the current time. Check that the time is set correctly and RTC properly updates the time
+* Use the **C** command to enable trickle charge, so that DS1302 will be charing the on-board supercapacitor
 
 
 __Congratulations! Enjoy your Flock Module!__
-
-
-
