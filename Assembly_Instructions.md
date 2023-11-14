@@ -77,8 +77,8 @@ as the socket introduces extra capacitance. You may choose to solder the DS1302 
 * Solder the J1 floppy interface connector
   * Note that you may need to cut or extract pin 3 from this connector to accommodate some floppy cables that have this pin position blocked
 * Solder the JP1 header
-* Solder the C6 capacitor. Pay attention to the __polarity__ – the negative side is painted white on the PCB and marked with blue. Note that C6 is marked as 47uF on the PCB. Install the supplied 10uF capacitor instead
-* If a supercapacitor to be used for RTC backup, solder the C7 supercapacitor. Pay attention to the __polarity__ – the negative side is painted white on the PCB and marked with gray stripe. Note that C7 is marked as 0.22F on the PCB. Install the supplied 0.33F supercapacitor instead
+* Solder the C6 capacitor. Pay attention to the __polarity__ – the negative side is painted white on the PCB and marked with blue on the capacitor. Note that C6 is marked as 47uF on the PCB. Install the supplied 10uF capacitor instead
+* If a supercapacitor to be used for RTC backup, solder the C7 supercapacitor. Pay attention to the __polarity__ – the negative side is painted white on the PCB and marked with gray stripe on the supercapacitor. Note that C7 is marked as 0.22F on the PCB. Install the supplied 0.33F supercapacitor instead
 * If a CR2032 battery to be used for RTC backup, solder BT1 battery holder. Observe the __polarity__
 
 ### 3. Check your soldering work
