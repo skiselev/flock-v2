@@ -241,7 +241,7 @@ Connector          | J2        | Floppy disk power connector contacts        | 2
 ### Changes
 
 * Version 2.0
-  * Update form factor from RC2014* compatible to to RCBus
+  * Update form factor from RC2014* compatible to RCBus
   * Add an option to use CR2032 battery instead of a super capacitor for the RTC
   * Use right angle connector for the floppy interface
   * Use ATF16V8B SPLD for address decode
