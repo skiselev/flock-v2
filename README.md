@@ -194,9 +194,9 @@ J3-40 | USER4       | User Pin 4; Not connected               | J3-80 | USER8   
 
 #### Version 2.0
 
-[Flock V2 project on Mouser.com]([https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=xxxxxxxxxx](https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=57797d9ea4)) - View and order all components except of the FDC and the PCB.
+[Flock V2 project on Mouser.com](https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=57797d9ea4) - View and order all components except of the FDC and the PCB.
 
-[Flock project on OSH Park](https://oshpark.com/shared_projects/xxxxxxxx) - View and order the PCB.
+[Flock project on OSH Park](https://oshpark.com/shared_projects/vQHiVNa8) - View and order the PCB.
 
 Flock project on Tindie: [Complete kit](https://www.tindie.com/products/weird/flock-v2-rcbus-module-kit/); [Flock PCB and FDC](https://www.tindie.com/products/weird/flock-v2-rcbus-module-pcb-and-fdc/).
 
