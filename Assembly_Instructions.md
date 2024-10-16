@@ -35,8 +35,8 @@ Image                                                                           
 <img src="images/Component-Jumper-2.jpg" alt="Jumper" height="120">                             | JP1       | Jumper/Shunt, 2 pin 2.54 mm pitch
 <img src="images/Component-Battery_Holder-CR2032.jpg" alt="CR2032 Battery Holder" height="120"> | BT1       | Battery Holder, CR2032 (optional; C7 can be installed instead) | 1
 <img src="images/Component-Cap-0.1uF-MLCC.jpg" alt="Ceramic Capacitors - 0.1uF" height="120">   | C1 - C5   | Capacitor, MLCC, 0.1 uF, 50V, 5 mm pitch               | 5
-<img src="images/Component-Cap-10uF-Polymer.jpg" alt="Organic Polymer Capacitor - 10uF" height="120"> | C6  | Capacitor, Organic Polymer, 10 uF, 63V, 6.3 mm diameter, 2.5 mm pitch (optional; BT1 can be installed instead) | 1
-<img src="images/Component-Supercap-0.33F.jpg" alt="Supercapacitor - 0.33F" height="120">       | C7        | Supercapacitor, 0.22 F, 5.5V, 13.5 mm diameter, 5 mm pitch            | 1
+<img src="images/Component-Cap-10uF-Polymer.jpg" alt="Organic Polymer Capacitor - 10uF" height="120"> | C6  | Capacitor, Organic Polymer, 10 uF, 63V, 6.3 mm diameter, 2.5 mm pitch | 1
+<img src="images/Component-Supercap-0.33F.jpg" alt="Supercapacitor - 0.33F" height="120">       | C7        | Supercapacitor, 0.22 F, 5.5V, 13.5 mm diameter, 5 mm pitch  (optional; BT1 can be installed instead) | 1
 <img src="images/Component-Cap-47pF-MLCC.jpg" alt="Ceramic Capacitor - 47pF" height="120">      | C8        | Capacitor, MLCC, 47 pF, 50V, 5 mm pitch                | 1
 <img src="images/Component-Cap-15pF-MLCC.jpg" alt="Ceramic Capacitor - 15pF" height="120">      | C9        | Capacitor, MLCC, 15 pF, 50V, 5 mm pitch                | 1
 <img src="images/Component-RN5-1k.jpg.jpg" alt="Resistor Network - 5x1k" height="120">          | RN1       | Resistor Network, 1 kohm, bussed, 6 pin SIP            | 1
