@@ -198,11 +198,12 @@ J3-40 | USER4       | User Pin 4; Not connected               | J3-80 | USER8   
 
 [Flock project on OSH Park](https://oshpark.com/shared_projects/vQHiVNa8) - View and order the PCB.
 
+
 Flock project on Tindie: [Complete kit](https://www.tindie.com/products/weird/flock-v2-rcbus-module-kit/); [Flock PCB, FDC, RTC, and SPLD](https://www.tindie.com/products/weird/flock-v2-rcbus-module-pcb-fdc-rtc-and-spld/).
 
 Component type     | Reference | Description                                 | Quantity | Possible sources and notes 
 ------------------ | --------- | ------------------------------------------- | -------- | --------------------------
-PCB                |           | Flock PCB - Version 2.0                     | 1        | Buy from my Tindie store: [Complete kit](https://www.tindie.com/products/weird/flock-rcbus-v2-module-kit/); [Flock PCB, FDC, RTC, and SPLD](https://www.tindie.com/products/weird/flock-v2-rcbus-module-pcb-fdc-rtc-and-spld/)., or order from a PCB manufacturer of your choice using provided Gerber or KiCad files
+PCB                |           | Flock PCB - Version 2.0                     | 1        | Buy from my Tindie store: [Complete kit](https://www.tindie.com/products/weird/flock-v2-rcbus-module-kit/); [Flock PCB, FDC, RTC, and SPLD](https://www.tindie.com/products/weird/flock-v2-rcbus-module-pcb-fdc-rtc-and-spld/)., or order from a PCB manufacturer of your choice using provided Gerber or KiCad files
 Integrated Circuit | U1        | WD37C65BJM - FDC, CMOS, 44 pin PLCC         | 1        | eBay. Alternative: ST AIC37C65CL
 Integrated Circuit | U2        | DS1302+ - RTC, 8 pin DIP                    | 1        | Mouser [700-DS1302](https://www.mouser.com/ProductDetail/700-DS1302)
 Integrated Circuit | U3        | ATF16V8B-15PU - Simple Programmable Logic Device, 20 pin DIP | 1 | Mouser [556-AF16V8B15PU](https://www.mouser.com/ProductDetail/556-AF16V8B15PU)
